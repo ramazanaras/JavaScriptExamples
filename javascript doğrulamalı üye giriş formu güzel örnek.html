@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        .lbl{
+            width:120px;
+            padding:5px;
+            color:#222;
+            text-align: right;
+            height:50px;
+        }
+        .txt{
+            width:150px;
+            font-size:15px;
+            padding:4px;
+
+        }
+        .txt*:focus{
+
+            border:1px solid #00a5ff;
+            background-color: #999;
+            color:#808080;
+        }
+        .fl{
+            float:left;
+
+        }
+        #wrapper{
+            width:800px;
+            margin:0px auto;
+        }
+        #menu{
+            text-align: center;
+
+        }
+        #menu a{
+            cursor:pointer;
+            color:blue;
+        }
+        #menu a:hover{
+
+            color:pink;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+            font-family: Verdana;
+        }
+        #footer{
+            clear:both;
+            text-align: center;
+        }
+        #divUyeOl{
+            display:none;
+        }
+        #divUyeGirisi{
+            display:none;
+        }
+        
+    </style>
+
+    <script>
+        function uyeOl() {
+            var kullaniciAdi = document.getElementById('txtKullaniciAdi').value;
+            var sifre = document.getElementById('txtSifre').value;
+            var sifreTekrar = document.getElementById('txtSifreTekrar').value;
+            var email = document.getElementById('txtEmail').value;
+
+            //alert(kullaniciAdi+""+sifre+""+sifreTekrar+""+email);
+
+            if (!Kontrol(kullaniciAdi, "Boş Geçilemez", 'lblKulAdi') | !Kontrol(sifre, "Boş Geçilemez", 'lblSifre') | !Kontrol(sifreTekrar, "Boş Geçilemez", 'lblSifreTekrar') |
+                    !Kontrol(email, "Boş Geçilemez", 'lblEmail') | !SifreleriKontrol(sifre, sifreTekrar, "Şifreler Uyuşmuyor", 'lblSifreTekrar') | !EmailKontrol(email, "Email formatında giriniz", "İşlem başarılı", 'lblEmail'))
+            {
+
+                document.getElementById('divSonuc').innerHTML = "<span style='color:red'>İşleminiz  Gerçekleştirilememiştir</span>";
+            }
+            else {
+                document.getElementById('divSonuc').innerHTML = "<span style='color:green'>İşleminiz Başarıyla Gerçekleştirilmiştir</span>";
+
+            }
+
+
+        }
+
+        function Kontrol(deger, hataMesaji, spanID)
+        {
+            if (deger == "")
+            {
+                document.getElementById(spanID).innerHTML = hataMesaji;
+                return false;
+
+            }
+            else {
+                document.getElementById(spanID).innerHTML = "Başarılı";
+                return true;
+            }
+
+        }
+        function SifreleriKontrol(sfr1, sfr2, hataMesaji, spanID)
+        {
+            var sonuc = true;
+            if (sfr1 != sfr2)
+            {
+                document.getElementById(spanID).innerHTML = "Şifreler Uyuşmamaktadır.";
+                sonuc = false;
+            }
+            return sonuc;
+
+        }
+        function EmailKontrol(email, hataMesaji, dogruMesaj, spanID)
+        {
+            var pattern = new RegExp(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/);
+            var sonuc = pattern.test(email);
+
+            document.getElementById(spanID).innerHTML = (sonuc ? dogruMesaj : hataMesaji);//ternary operatoru kullandık(if yapısının kısaltılmışı)
+            return sonuc;
+        }
+        
+        
+        //Giriş yap üye ol panellerinin açılımı
+        function UyeGirisYapAc()
+        {
+            document.getElementById('divUyeOl').style.display='none';
+              document.getElementById('divUyeGirisi').style.display='block';
+        }
+        function UyeOlAc()
+        {
+            document.getElementById('divUyeOl').style.display='block';
+              document.getElementById('divUyeGirisi').style.display='none';
+        }
+    
+    </script> 
+
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="menu">
+        <a onclick="UyeGirisYapAc()">Giriş Yap</a> | <a onclick="UyeOlAc()">Üye Ol</a>
+    </div>
+    
+    <div id="content">
+        <div id="divUyeOl" class="fl">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lbl">Kullanıcı Adı:</td>
+                    <td class="txt"><input id="txtKullaniciAdi" type="text"/></td>
+                <td class="snc" ><span id="lblKulAdi"></span></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Şifre:</td>
+                    <td class="txt"><input id="txtSifre" type="password"/></td>
+                <td class="snc"><span id="lblSifre"></span></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Şifre Tekrar:</td>
+                    <td class="txt"><input id="txtSifreTekrar" type="password"/></td>
+                <td class="snc"><span id="lblSifreTekrar"></span></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Email:</td>
+                    <td class="txt"><input id="txtEmail" type="text"/></td>
+                <td class="snc"><span id="lblEmail"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                <input type="submit" value="Gönder" onclick="uyeOl()"/>
+                </td>
+                </tr>
+            </table>
+
+
+            <div id="divSonuc"></div>
+
+
+        </div>
+
+
+        <div id="divUyeGirisi" class="fl">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lbl">Kullanıcı Adı:</td>
+                    <td class="txt"><input id="txtKullaniciAdi" type="text"/></td>
+                <td class="snc" ><span id="lblKulAdi"></span></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Şifre:</td>
+                    <td class="txt"><input id="txtSifre" type="password"/></td>
+                <td class="snc"><span id="lblSifre"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                <input type="submit" value="Giriş Yap" onclick=""/>
+                </td>
+                </tr>
+            </table>
+            <div id="divUyeGirisiSonuc"></div>
+        </div>
+
+    </div>
+    <div id="footer">
+        &copy;2013;
+        
+    </div>
+</div><!--wrapper sonu-->
+</body>
+</html>

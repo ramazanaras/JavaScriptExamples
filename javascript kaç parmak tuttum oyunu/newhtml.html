@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>Kaç parmak tuttum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #benTah,#bilTah{
+            width:400px;
+            height:400px;
+            float:left;
+            background-color: red;
+            margin-right:5px;
+            background-repeat:no-repeat;
+            background-position:100px 30px;
+        }
+        .clear{
+            clear:both;
+        }
+        input[type="text"]{
+            width:25px;
+            position:relative;
+            top:-5px;
+        }
+        input[type="submit"]{
+            position:relative;
+            top:-5px;
+        }
+    </style>
+   
+    
+</head>
+<body>
+    <!--JAVASCRİPT KAÇ PARMAK TUTTUM OYUNU-->
+     <div id="benTah"></div>
+     <div id="bilTah"></div>
+     <div class="clear"></div>
+     <input type="range" id="kaydir" min="0" max="5"/><input type="text" disabled="disabled"/>
+     <input type="submit" value="Sansini Dene" id="dene"/><br/>
+     <span id="skor"></span>
+    
+    
+    
+<script>
+     var bilg=document.getElementById("bilTah"),ben=document.getElementById("benTah"),
+            kaydir=document.getElementById("kaydir"),skor=5,bilgTah,
+            benTah,buton=document.getElementById("dene");
+   
+   
+   //kaydiricinin değerini yana yazdık.
+   kaydir.addEventListener("mousedown",function(){
+       this.addEventListener("mousemove",function(){
+           this.nextElementSibling.value=this.value; 
+           benTah=this.value;
+           
+            switch(benTah)
+   {
+       case "0":ben.style.backgroundImage="url(0.png)";
+       break;
+       case "1":ben.style.backgroundImage="url(1.png)";
+       break;
+       case "2":ben.style.backgroundImage="url(2.png)";
+       break;
+        case "3":ben.style.backgroundImage="url(3.png)";
+       break;
+        case "4":ben.style.backgroundImage="url(4.png)";
+       break;
+         case "5":ben.style.backgroundImage="url(5.png)";
+       break;
+        
+   }
+   
+    }); }); 
+   
+   
+   
+   //oyunu kodlamaya başladık.
+   buton.addEventListener("click",function(){
+       bilgTah=Math.round(Math.random()*5);
+     switch(bilgTah)
+   {
+       case 0:bilg.style.backgroundImage="url(0.png)";
+       break;
+       case 1:bilg.style.backgroundImage="url(1.png)";
+       break;
+       case 2:bilg.style.backgroundImage="url(2.png)";
+       break;
+        case 3:bilg.style.backgroundImage="url(3.png)";
+       break;
+        case 4:bilg.style.backgroundImage="url(4.png)";
+       break;
+         case 5:bilg.style.backgroundImage="url(5.png)";
+       break;  
+   }  
+      if(bilgTah==Number(benTah)) {
+          skor++;
+          document.getElementById("skor").innerHTML="Skorunuz: "+skor;
+          alert("Tebrikler Skorunuz: "+skor);
+          
+      }else{
+          skor--;
+          document.getElementById("skor").innerHTML="Skorunuz: "+skor;
+          if(skor<1){buton.disabled=true;
+          alert("Üzgünüm hiç jetonunuz kalmadı\n Oynamak için jeton yükleyin.");
+            }
+          
+      }
+       
+       
+   });
+   
+   
+           
+   
+</script>
+
+</body>
+</html>

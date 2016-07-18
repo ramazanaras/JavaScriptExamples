@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #anaEl {
+            width:50px;
+            height:50px;
+            background-color: #f4cbad;
+            position:relative;
+        }
+    </style>
+    <script>
+        var anaEl,olusmaZamani,tiklamaZamani;
+        window.addEventListener("load",function(){
+            anaEl=document.getElementById("anaEl");
+            anaEl.addEventListener("click",tik);
+        });
+        function rastPoz(maxYuk,maxGen,birim){
+            var yukseklik=Math.round(Math.random()*maxYuk)+birim,genislik=Math.round(Math.random()*maxGen)+birim;
+            return [yukseklik,genislik];
+        }
+        function bicim(){
+            var bicim=Math.round(Math.random()*60)+"%";
+            return bicim;
+            
+        }
+        function rastRenk(){
+            var olasiliklar="0123456789abcdef",renk="#";
+            for(var i=0;i<6;i++){
+            renk+=olasiliklar.split("")[Math.floor(Math.random()*15)];
+                             }
+                             return renk;
+        }
+        function olus(){
+            setTimeout(function(){
+                pozisyon=rastPoz(400,600,"px");
+                anaEl.style.borderRadius=bicim();
+                anaEl.style.backgroundColor=rastRenk();
+               anaEl.style.top=pozisyon[0];
+               anaEl.style.left=pozisyon[1];
+                anaEl.style.display="block";/*görünüryap*/
+                olusmaZamani=Date.now();
+            },Math.random()*5000);
+            
+        }
+        function tik(){
+            olus();
+            tiklamaZamani=Date.now();
+            anaEl.style.display="none";
+            document.getElementById("sonuc").innerHTML="Reaksiyon hızınız: "+((tiklamaZamani-olusmaZamani)/1000).toFixed(2)+"saniyedir";
+        }
+    </script>
+</head>
+<body>
+<!--REAKSİYON HIZ TESTİ OYUNU-->
+<div id="sonuc"></div>
+<div id="anaEl"></div>
+
+
+
+
+
+
+
+</body>
+</html>

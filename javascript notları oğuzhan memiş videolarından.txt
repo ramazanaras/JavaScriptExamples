@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    <script>
+        alert("hoþgeldiniz");
+    </script>
+</head>
+<body>
+    
+    
+    
+    
+    <script>
+        alert("merhaba");
+    </script>
+</body>
+</html>
+
+------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+       document.write("phphocam profesyonel yazýlým dersleri<br/>");
+       document.write("ilk javascript dersimiz");
+    </script>   
+    
+    
+    
+   
+</body>
+</html>
+-------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     
+       //bu benim ilk yorumum
+       /*çift satýrlý yorum satýrý*/
+      // document.write("php hocam yazýlým dersleri");
+        document.write("php hocam ");
+    </script>   
+    
+    
+    
+   
+</body>
+</html>
+--------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     var phphocam=5;
+     document.write(phphocam);
+       
+    </script>   
+    
+    
+    
+   
+</body>
+</html>
+----------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     var phphocam="oguzhan dediki: \"nasýlsýn adamým\" ";
+     document.write(phphocam);
+       
+    </script>   
+    
+    
+    
+   
+</body>
+</html>
+--------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     var phphocam=55.9999222;
+     document.write(phphocam);
+       
+    </script>   
+    
+    
+    
+   
+</body>
+</html>
+---------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     var phphocam="php hocama hoþgeldiniz ";
+     var isim="Ali";
+     
+     document.write(phphocam+isim);
+    
+       
+    </script>   
+    
+    
+    
+   
+</body>
+</html>
+------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     var phphocam="php hocama hoþgeldiniz ";
+     var isim="Ali";
+     
+     document.write(phphocam+ "Nasýlsýn " +isim);
+    
+       
+    </script>   
+    
+    
+    
+   
+</body>
+</html>
+-------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     var phphocam="php hocama hoþgeldiniz ";
+     var soru="nasýlsýn "
+     var isim="Ali";
+     
+     document.write(phphocam+ soru +isim);
+    
+       
+    </script>   
+    
+    
+    
+   
+</body>
+</html>
+-------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     function phphocam()
+     {
+         alert("Php hocama hoþgeldin");
+         
+     }
+    phphocam();
+       
+    </script>   
+    
+    
+    
+   
+</body>
+</html>
+-------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     function phphocam()
+     {
+         alert("Php hocama hoþgeldin");
+         
+     }
+   
+       
+    </script>   
+    
+<form>
+    <input type="button" value="týkla" onclick="phphocam()">
+</form>
+    
+    
+   
+</body>
+</html>
+------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     function phphocam(isim)
+     {
+         alert("nasýlsýn "+isim);
+         
+     }
+   
+       phphocam("Ali");
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+----------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     function phphocam(isim)
+     {
+         alert("nasýlsýn "+isim);
+         
+     }
+   
+       phphocam("Ali");
+       phphocam("fatih");
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+---------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     function prophphocam(bir,iki)
+     {
+         document.write(bir+"ve"+iki+"<br/>");
+         
+     }
+   
+     prophphocam("Ali "," veli ");
+      prophphocam("Ahmet "," mehmet ");
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+-------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     function topla(x,y)
+     {
+        var sonuc=x+y;
+        return sonuc;
+         
+     }
+   document.write(topla(5,9));
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+-------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+     function ilk()
+     {
+         document.write("ben ilk fonksyionum!");
+      
+         
+     }
+    function ikinci()
+     {
+         document.write("baþka bir fonksiyon");
+        
+     }
+    
+    
+    function basla(){
+        ilk();
+        ikinci();
+        
+    }
+    basla();
+    </script>   
+    ---------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+    var phphocam="Fatih ";
+    function kutu()
+    {
+        document.write(phphocam);
+        
+    }
+    
+    kutu();
+    document.write(phphocam);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+---------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+   
+    function kutu()
+    {
+         var phphocam="Fatih ";
+        document.write(phphocam);
+        
+    }
+    
+    kutu();
+    document.write(phphocam);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var armut=5+11+55;
+  document.write(armut);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+-----------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var armut=50-22;
+  document.write(armut);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+-----------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var armut=50*22;
+  document.write(armut);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var armut=50/22;
+  document.write(armut);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+--------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var armut=50%22;
+  document.write(armut);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+--------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var armut=20;
+  armut=armut+1;
+  document.write(armut);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+---------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var armut=20;
+  armut++;
+  
+  document.write(armut);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+-----------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var phphocam=10;
+  phphocam+=50;
+  document.write(phphocam);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+-----------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var phphocam=10;
+  phphocam+=50;
+   phphocam*=50;
+  document.write(phphocam);
+    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var elma=55;
+  var kiraz=33;
+  if(elma>kiraz)
+  {
+      document.write("iþlem doðru");
+      
+  }    
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+---------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var elma=55;
+  var kiraz=33;
+  if(elma<kiraz)
+  {
+      document.write("iþlem doðru");
+      
+  }    
+  else{
+      
+      document.write("iþlem yanlýþ");
+  }
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var isim="oðuzhan";
+  var soyisim="memiþ";
+  
+  if(isim=="oðuzhan"){
+      if(soyisim=="memiþasdsad"){
+            document.write("hoþgeldin");
+          
+      }else{
+          document.write("yanlýþ kiþi")
+          
+      }
+    
+      
+  }
+    </script>   
+    
+
+    
+    
+   
+</body>
+</html>
+--------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var isim="oðuzhan";
+  var soyisim="memiþ";
+  
+  if((isim=="oðuzhan")&&(soyisim=="memiþ") ){
+      document.write("iþlem baþarý ile gerçekleþti");
+      
+      
+  }else{
+      document.write("Baþarýsýz");
+  }
+    </script>   
+     
+</body>
+</html>
+-----------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+  var isim="oðuzhan";
+  var soyisim="memiþ";
+  
+  if((isim=="oðuzhan")&&(soyisim=="memiþasdasd") ){
+      document.write("iþlem baþarý ile gerçekleþti");
+      
+      
+  }else if((isim=="oðuzhan")||(soyisim=="memiþasdasd")){
+      document.write("koþullardan sadece biri doðru");
+      
+  }
+  
+    else{
+      document.write("Baþarýsýz");
+  }
+    </script>   
+     
+</body>
+</html>
+--------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+ 
+ var meyve="elma";
+ switch(meyve)
+ {
+     case "elma":
+     document.write("elma kýrmýzý veya yeþil olabilir");
+     break;
+     
+     
+ }
+ 
+ 
+ 
+    </script>   
+     
+</body>
+</html>
+------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+ 
+ var meyve="portakal";
+ switch(meyve)
+ {
+     case "elma":
+     document.write("elma kýrmýzý veya yeþil olabilir");
+     break;
+     
+ case "portakal":
+   document.write("portakal turuncudur.");
+     break;  
+     
+ }
+ 
+ 
+ 
+    </script>   
+     
+</body>
+</html>
+-------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+ 
+ var meyve="armut";
+ switch(meyve)
+ {
+     case "elma":
+     document.write("elma kýrmýzý veya yeþil olabilir");
+     break;
+     
+ case "portakal":
+   document.write("portakal turuncudur.");
+     break;  
+     
+ default:
+     document.write("yanlýþ meyve"); 
+ }
+ 
+ 
+ 
+    </script>   
+     
+</body>
+</html>
+----------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+    for(x=0;x<10;x++){
+        
+        document.write("nasýlsýn<br/>");
+    }
+    
+ 
+    </script>   
+     
+</body>
+</html>
+--------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+    for(x=0;x<10;x+=2){
+        
+        document.write(x);
+    }
+    
+ 
+    </script>   
+     
+</body>
+</html>
+-------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+    for(x=0;x<10;x+=2){
+        
+        document.write(x+"<br/>");
+    }
+    
+ 
+    </script>   
+     
+</body>
+</html>
+------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+   var x=1;
+   
+   while(x<10){
+       document.write(x+"phphocam<br/>");
+       x++;
+   }
+   
+   
+ 
+    </script>   
+     
+</body>
+</html>
+----------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+  <script type="text/javascript">
+    
+   var x=0;
+   do{
+       
+       document.write(x+" phphocam <br/>")
+       x++;
+       
+   }while(x<10);
+   
+   
+ 
+    </script>   
+     
+</body>
+</html>
+----------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+
+    
+            <form>
+            <input type="button" value="týkla" onClick="alert('Naber');"/>
+            </form>
+   
+   
+ 
+
+     
+</body>
+</html>
+-----------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+
+    
+            <form>
+            <input type="button" value="týkla" onClick="alert('Naber');alert('Nasýlsýn');"/>
+            </form>
+   
+   
+ 
+
+     
+</body>
+</html>
+--------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+
+    <a href="www.google.com" onmouseover="alert('týklamadýn ki')">Google a gitmek için týkla</a>
+ 
+
+     
+</body>
+</html>
+------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+
+    <a href="www.google.com" onmouseout="alert('týklamadýn ki')">Google a gitmek için týkla</a>
+ 
+
+     
+</body>
+</html>
+--------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body onload="alert('sayfayý beðen');">
+
+    <a href="www.google.com" onmouseout="alert('týklamadýn ki')">Google a gitmek için týkla</a>
+ 
+
+     
+</body>
+</html>
+----------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body >
+
+<script type="text/javascript">
+   var phphocam="phphocama hoþgeldiniz!"; 
+    
+    document.write(phphocam.length);
+    
+</script>
+ 
+
+     
+</body>
+</html>
+------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+    
+    <script type="text/javascript">
+  function kisi(isim,yas){
+      
+      this.isim=isim;
+      this.yas=yas;
+      
+  }
+     var oguzhan=new kisi("Oðuzhan",22);
+       var mehmet=new kisi("Mehmet",30);  
+</script>
+    
+    
+    
+</head>
+<body >
+
+<script type="text/javascript">
+    
+    document.write(oguzhan.isim);
+    
+</script>
+ 
+
+     
+</body>
+</html>
+----------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+    
+    <script type="text/javascript">
+  function kisi(isim,yas){
+      
+      this.isim=isim;
+      this.yas=yas;
+      
+  }
+     var oguzhan=new kisi("Oðuzhan",22);
+       var mehmet=new kisi("Mehmet",30);  
+</script>
+    
+    
+    
+</head>
+<body >
+
+<script type="text/javascript">
+    
+    document.write(oguzhan.yas);
+    
+</script>
+ 
+
+     
+</body>
+</html>
+-------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+    
+    <script type="text/javascript">
+
+
+oguzhan={isim:"Oðuzhan memiþ",yas:24};
+mehmet={isim:"Mehmet ARas",yas:30};
+
+        
+        
+</script>
+    
+    
+    
+</head>
+<body >
+
+<script type="text/javascript">
+    
+    document.write(oguzhan.isim+" 'nýn yaþý: "+oguzhan.yas+"dir. <br/>"+
+            mehmet.isim+" 'in yaþý: "+mehmet.yas+"dur. <br/>");
+    
+</script>
+ 
+
+     
+</body>
+</html>
+------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    
+    
+    <script type="text/javascript">
+//nesnelere metod ekleme
+
+function kisi(isim,yas){
+    
+    
+    this.isim=isim;
+    this.yas=yas;
+    this.ortalamaHayatSuresi=ortYasamSuresi;
+}
+function ortYasamSuresi(){
+    
+    var ortYil=65-this.yas;
+    return ortYil;
+}
+        
+        var mehmet=new kisi("mehmet",33);
+</script>
+    
+    
+    
+</head>
+<body >
+
+<script type="text/javascript">
+    
+    document.write(mehmet.ortalamaHayatSuresi());
+    
+</script>
+ 
+
+     
+</body>
+</html>
+--------------------
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    
+  var insan=new Array("mehmet","fatih","yavuz","kanuni");
+   
+   document.write(insan[0]); 
+    
+</script>
+ 
+
+     
+</body>
+</html>
+---------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    
+  var insan=new Array();
+   
+   insan[0]="Ahmet";
+   insan[2]="Fatih"
+   document.write(insan[2]); 
+    
+</script>
+ 
+
+     
+</body>
+</html>
+----------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+  var ogretmenler=new Array("mehmet","fatih","yavuz","kanuni");
+  var polis=new Array("Adnan","osman","murat");
+   
+   var insan=ogretmenler.concat(polis);
+   
+   
+   document.write(insan[5]);
+    
+</script>
+ 
+
+     
+</body>
+</html>
+----------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+  
+  var arabalar=new Array("Toyota","opel","bmw","subaru");
+  
+  var stringecevir=arabalar.join();
+  
+    document.write(stringecevir);
+</script>
+ 
+
+     
+</body>
+</html>
+----------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+  
+  var arabalar=new Array("Toyota","opel","bmw","subaru");
+  
+  var stringecevir=arabalar.join(" - ");
+  
+    document.write(stringecevir);
+</script>
+ 
+
+     
+</body>
+</html>
+----------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+  
+  var arabalar=new Array("Toyota","opel","bmw","subaru");
+  
+  var stringecevir=arabalar.join(" - ");//elemanýn arasýna ekler
+  
+    document.write(stringecevir+"<br/>");
+    arabalar.pop();//son elemaný siler
+    document.write(arabalar[3]);
+    arabalar.pop();
+     document.write(arabalar[2]);
+</script>
+ 
+
+     
+</body>
+</html>
+--------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+  
+  var arabalar=new Array("Toyota","opel","bmw","subaru");
+   arabalar.reverse();//ters çevirir
+  var stringecevir=arabalar.join(" - ");//elemanýn arasýna ekler
+  
+    document.write(stringecevir+"<br/>");
+  
+</script>
+ 
+
+     
+</body>
+</html>
+--------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+  
+  var arabalar=new Array("Toyota","opel","bmw","subaru");
+   arabalar.reverse();//ters çevirir
+   arabalar.push("kartal","þahin");//ekleme yapar.
+  var stringecevir=arabalar.join(" - ");//elemanýn arasýna ekler
+  
+    document.write(stringecevir+"<br/>");
+  
+</script>
+ 
+
+     
+</body>
+</html>
+------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+  
+  var arabalar=new Array("Toyota","opel","bmw","subaru");
+   arabalar.reverse();//ters çevirir
+   arabalar.push("kartal","þahin");//ekleme yapar.
+   arabalar.sort();//sýralama yapar alfabetik.
+  var stringecevir=arabalar.join(" - ");//elemanýn arasýna ekler
+  
+    document.write(stringecevir+"<br/>");
+  
+</script>
+ 
+
+     
+</body>
+</html>
+----------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+  //uyarý kutucuðu cýkartý.
+  var phphocam=prompt("prophphocama üyemisin","Evet");
+  
+</script>
+ 
+
+     
+</body>
+</html>
+----------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+  //uyarý kutucuðu cýkartý.
+  var phphocam=prompt("prophphocama üyemisin","Evet");
+  
+  document.write(phphocam);
+  
+  
+</script>
+ 
+
+     
+</body>
+</html>
+---------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //array özellikleri
+ 
+ var rakamlar=new Array(3);
+
+
+for(i=0;i<3;i++){
+   rakamlar[i]=prompt("Arraye eleman ekle:","");
+    
+    
+}
+ 
+  document.write(rakamlar[0]+ rakamlar[1]+ rakamlar[2]);
+  
+  
+</script>
+ 
+
+     
+</body>
+</html>
+------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //pratik metodlar
+ 
+ var ogretmenler=new Array("ahmet","mehmet","yavuz","selim");
+ ogretmenler.sort();
+ 
+ for(i=0 ;i<ogretmenler.length;i++){
+     
+     document.write(ogretmenler[i]+"<br/>")
+     
+ }
+  
+</script>
+ 
+
+     
+</body>
+</html>
+----------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+    //associative arrays
+ 
+ var ogretmenler=new Array();
+  ogretmenler["mat"]="Ali dönmez";
+  ogretmenler["kim"]="Mehmet Ar";
+  
+  document.write("matematik öðretmenimizin adý:"+ogretmenler["mat"]);
+</script>
+ 
+
+     
+</body>
+</html>
+----------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+ //math objesi
+  
+  document.write(Math.PI);
+  
+  
+</script>
+ 
+
+     
+</body>
+</html>
+-------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+ //math objesi
+  
+  ;
+  
+  var n=prompt("Bir sayý  gir","")
+var cevap =Math.sqrt(n);
+
+ document.write(cevap);
+</script>
+ 
+
+     
+</body>
+</html>
+--------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+ //math objesi
+  
+  ;
+  
+  var n=prompt("Bir sayý  gir","")
+var cevap =Math.sqrt(n);
+
+ document.write(cevap);
+ alert(n+" nýn kökü "+cevap);
+</script>
+ 
+
+     
+</body>
+</html>
+------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+ //date pbjesi
+  
+
+function deneme()
+{
+    
+    document.write("phphocam<br/>");
+    
+    
+}
+ setInterval("deneme()",2000);//2snde bir çýkýyor.
+ 
+ 
+ 
+</script>
+ 
+
+     
+</body>
+</html>
+---------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<script type="text/javascript">
+ //date objesi
+  
+
+function zaman()
+{
+    
+   var simdi=new Date();
+   
+   var saat=simdi.getHours();
+   
+   var dakika=simdi.getMinutes();
+   
+   var saniye=simdi.getSeconds();
+    
+    document.write(saat+":"+dakika+":"+saniye+"<br/>");
+}
+
+ setInterval("zaman()",1000);
+ 
+ 
+</script>
+ 
+
+     
+</body>
+</html>
+-------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+    
+    <form>
+        isim:<input type="text"/>
+        þifre:<input type="password"/>
+        <input type="button" value="gönder"/>
+    </form>
+    
+    
+    
+<script type="text/javascript">
+ //form eriþimi
+ 
+ var phphocam=document.forms[0].length;
+ document.write(phphocam);
+ 
+  
+
+
+ 
+ 
+</script>
+ 
+
+     
+</body>
+</html>
+------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+    
+    <form name="phphocamFormu">
+        Ýsim:<input type="text" name="isim"/>
+        Þifre:<input type="password" name="sifre"/>
+        <input type="button" value="gönder"/>
+    </form>
+    
+    
+    
+<script type="text/javascript">
+ //form eriþimi
+ 
+ var phphocam=document.forms[0].elements[0].name;
+ document.write(phphocam);
+ 
+  
+
+
+ 
+ 
+</script>
+ 
+
+     
+</body>
+</html>
+--------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+    
+    <form name="phphocamFormu">
+        Ýsim:<input type="text" name="isim"/>
+        Þifre:<input type="password" name="sifre"/>
+        <input type="button" value="gönder"/>
+    </form>
+    
+    
+    
+<script type="text/javascript">
+ //form eriþimi
+ 
+ var phphocam=document.phphocamFormu.isim.name;
+ document.write(phphocam);
+ 
+  
+
+
+ 
+ 
+</script>
+ 
+
+     
+</body>
+</html>
+-----------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+    
+    <form name="phphocamForm">
+        <input type="checkbox" name="kutu"/>
+        <input type="button"  value="gönder" onClick="onaylama()"/>
+     
+    </form>
+    
+    
+    
+<script type="text/javascript">
+ //form doðrulama
+ 
+ function onaylama(){
+     
+     if(document.phphocamForm.kutu.checked)
+     {
+         alert("checkbox týklandý");
+         
+     }
+     else 
+       alert("lütfen önce checkboxa týkla");  
+     
+     
+ }
+  
+
+
+ 
+ 
+</script>
+ 
+
+     
+</body>
+</html>
+-----------------------
+

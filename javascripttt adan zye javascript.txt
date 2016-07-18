@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+//belli bir idye sahip sayfa elemanlarýna ulaþmak
+<div id="icerik">ornek içerik</div>
+    
+<script type="text/javascript">
+alert(document.getElementById("icerik").innerHTML);
+</script>
+ 
+
+     
+</body>
+</html>
+---------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<div id="icerik">ornek içerik</div>
+    
+<script type="text/javascript">
+document.getElementById("icerik").innerHTML="deðiþti";
+</script>
+ 
+
+     
+</body>
+</html>
+-------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<div id="icerik">ornek içerik</div>
+    
+<script type="text/javascript">
+//document.getElementById("icerik").innerHTML="deðiþti";
+
+document.getElementById("icerik").style.color="red";
+</script>
+ 
+
+     
+</body>
+</html>
+-------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<div id="icerik" style="color:red">ornek içerik</div>
+    
+<script type="text/javascript">
+//document.getElementById("icerik").innerHTML="deðiþti";
+
+document.getElementById("icerik").style.color="blue";
+</script>
+ 
+
+     
+</body>
+</html>
+-----------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<div id="icerik" style="color:red">ornek içerik</div><br/>
+    
+<button id="üstrenk" onclick="document.getElementById('icerik').style.fontSize='10px';">üstümdeki yazýnýn fontunu deðiþtirmek için bana týkla </button><br/>
+<input type="submit" value="içindeki yazýyý deðiþtirmek için lütfen týkla" id="icdegis"/>
+
+<script type="text/javascript">
+//document.getElementById("icerik").innerHTML="deðiþti";
+
+document.getElementById("icerik").style.color="blue";
+
+document.getElementById("icdegis").onclick=function(){
+    
+    this.value="týkladýn";
+    
+}
+</script>
+ 
+
+     
+</body>
+</html>
+----------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<div id="icerik" style="color:red">ornek içerik</div><br/>
+    
+<button id="üstrenk" onclick="document.getElementById('icerik').style.color='yellow';">üstümdeki yazýnýn rengini  deðiþtirmek için bana týkla </button><br/>
+<input type="submit" value="içindeki yazýyý deðiþtirmek için lütfen týkla" id="icdegis"/>
+
+<script type="text/javascript">
+//document.getElementById("icerik").innerHTML="deðiþti";
+
+document.getElementById("icerik").style.color="blue";
+
+document.getElementById("icdegis").onclick=function(){
+    
+    this.value="týkladýn";
+    
+}
+</script>
+ 
+
+     
+</body>
+</html>
+------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<div id="icerik" style="color:red">ornek içerik</div><br/>
+    
+<button id="ustrenk" >üstümdeki yazýnýn rengini  deðiþtirmek için bana týkla </button><br/>
+<input type="submit" value="içindeki yazýyý deðiþtirmek için lütfen týkla" id="icdegis"/>
+
+<script type="text/javascript">
+//document.getElementById("icerik").innerHTML="deðiþti";
+
+document.getElementById("icerik").style.color="blue";
+
+document.getElementById("icdegis").onclick=function(){
+    
+    this.value="týkladýn";
+}
+
+
+document.getElementById('ustrenk').onclick=function(){
+    
+    document.getElementById("icerik").innerHTML="üstrenge týklamýþ bulundun.";
+    
+}
+
+</script>
+ 
+
+     
+</body>
+</html>
+----------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<div id="icerik" style="color:red">ornek içerik</div><br/>
+    
+<button id="ustrenk" >üstümdeki yazýnýn rengini  deðiþtirmek için bana týkla </button><br/>
+<input type="submit" value="içindeki yazýyý deðiþtirmek için lütfen týkla" id="icdegis"/>
+
+<script type="text/javascript">
+//document.getElementById("icerik").innerHTML="deðiþti";
+
+document.getElementById("icerik").style.color="blue";
+
+document.getElementById("icdegis").onclick=function(){
+    
+    this.value="týkladýn";
+}
+
+
+document.getElementById('ustrenk').onclick=function(){
+    
+    document.getElementById("icerik").innerHTML="üstrenge týklamýþ bulundun.";
+    alert(document.getElementById("ustrenk").innerHTML);
+}
+
+</script>
+ 
+
+     
+</body>
+</html>
+-----------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+  
+</head>
+<body >
+
+<div id="icerik" style="color:red">ornek içerik</div><br/>
+    
+<button id="ustrenk" >üstümdeki yazýnýn rengini  deðiþtirmek için bana týkla </button><br/>
+<input type="submit" value="içindeki yazýyý deðiþtirmek için lütfen týkla" id="icdegis"/>
+
+<script type="text/javascript">
+//document.getElementById("icerik").innerHTML="deðiþti";
+
+document.getElementById("icerik").style.color="blue";
+
+document.getElementById("icdegis").onclick=function(){
+    
+    this.value="týkladýn";
+}
+
+
+document.getElementById('ustrenk').onclick=function(){
+    
+    document.getElementById("icerik").innerHTML="üstrenge týklamýþ bulundun.";
+    alert(document.getElementById("ustrenk").innerHTML);
+}
+document.getElementById("icerik").onmousedown=function(){
+    
+    this.innerHTML="mouse aþaðýda";
+    
+}
+document.getElementById("icerik").onmouseup=function(){
+    
+    this.innerHTML="mouse yukarýda";
+    
+}
+</script>
+ 
+
+     
+</body>
+</html>
+----------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            background-color: red;
+            width:150px;
+            height:150px;
+            float:left;
+            margin-right:15px;
+            
+        }  
+        
+        .uzerinde{
+            background-color: blue !important;
+        }
+        .disinda{
+            background-color: red; 
+        }
+    </style>
+</head>
+<body >
+
+
+
+<div id="ciftTik"></div>
+<div id="uzeri"></div>
+<div id="tut"></div>
+
+<button id="reset">reset butonu</button>
+
+<script>
+  document.getElementById("uzeri").onmouseover=function(){
+      
+      this.className="uzerinde";
+  }  
+    
+    document.getElementById("uzeri").onmouseout=function(){
+        this.className="disinda";
+        
+    }
+    document.getElementById("ciftTik").ondblclick=function(){
+        this.innerHTML="bana çift týkladýn";
+        
+    }
+    document.getElementById("ciftTik").onclick=function(){
+        
+        this.innerHTML="";
+    }
+     document.getElementById("tut").onmousedown=function(){
+        
+        this.style.width="400px";
+    }
+     document.getElementById("tut").onmouseup=function(){
+        
+        this.style.width="120px";
+    }
+</script>
+</body>
+</html>
+--------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            background-color: red;
+            width:150px;
+            height:150px;
+            float:left;
+            margin-right:15px;
+            
+        }  
+        
+        .uzerinde{
+            background-color: blue !important;
+        }
+        .disinda{
+            background-color: yellow; 
+        }
+        .sakla{
+            
+            display:none;
+        }
+    </style>
+</head>
+<body >
+<!--KAYBOLAN HALKALAR-->
+
+
+<div id="ciftTik"></div>
+<div id="uzeri"></div>
+<div id="tut"></div>
+
+<button id="reset">reset butonu</button><br/>
+<div id="ozet" style="background-color:white;width:100% "></div>
+<script>
+  document.getElementById("uzeri").onmouseover=function(){
+      
+      this.className="uzerinde";
+       document.getElementById("ozet").className="sakla";
+  }  
+    
+    document.getElementById("uzeri").onmouseout=function(){
+        this.className="disinda";
+        document.getElementById("ozet").className="sakla";
+        
+    }
+    document.getElementById("ciftTik").ondblclick=function(){
+        this.innerHTML="bana çift týkladýn";
+        document.getElementById("ozet").className="sakla";
+        
+    }
+    document.getElementById("ciftTik").onclick=function(){
+        
+        this.innerHTML="geri týkladýn";
+        document.getElementById("ozet").className="sakla";
+    }
+     document.getElementById("tut").onmousedown=function(){
+        
+        this.style.width="400px";
+        this.innerHTML="aþaðýda";
+        document.getElementById("ozet").className="sakla";
+    }
+     document.getElementById("tut").onmouseup=function(){
+        
+        this.style.width="120px";
+        this.innerHTML="yukarýda";
+        document.getElementById("ozet").className="sakla";
+    }
+    document.getElementById("reset").onclick=function(){
+     document.getElementById("uzeri").className="";
+     document.getElementById("ciftTik").innerHTML="";
+      document.getElementById("tut").innerHTML="";
+       document.getElementById("tut").style.width="150px";   
+    document.getElementById("ozet").innerHTML="ilk divin classý silindi <br/> ikinci divin yazým deðiþiklikleri onarýldý <br/>son divingeniþiliði ve \n\
+içeriði resetlendi.<br/> 3 iþlem baþarý ile tamamlandý hata mesajýna rastlanmadý";
+       document.getElementById("ozet").className=""; 
+    }
+</script>
+</body>
+</html>
+------------------
+//freelancer kazanç programý
+HTML KISMI
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <title>Freelancer Programý</title>
+    <link rel="stylesheet" type="text/css" href="freelance.css"/>
+    
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Toplam Gelir</td>
+                <td>:</td>
+                <td><input id="toplam" placeholder="Toplam gelir giriniz."/></td>
+            </tr> 
+             <tr>
+                <td>Bitiþ  Süresi</td>
+                <td>:</td>
+                <td><input id="bitis" placeholder="Bitiþ Süresi Giriniz"/></td>
+            </tr> 
+             <tr>
+                <td><input type="submit" id="buton" value="Hesapla"/></td>
+            </tr> 
+           
+        </table> 
+        <span id="para"></span>
+         <div id="sonuc"></div>
+    <script src="freelance.js"></script>    
+    </body> 
+</html>
+
+JAVASCRÝPT KISMI
+var toplamUcret=document.getElementById("toplam"),
+sure=document.getElementById("bitis"),
+buton=document.getElementById("buton"),
+sonucDiv=document.getElementById("sonuc"),
+paraBirimi=prompt("Para Birimi Giriniz...");
+
+document.getElementById("para").innerHTML="para biriminiz "+paraBirimi+" <a id='degistirici' href='#'>deðiþtir</a>";
+
+
+document.getElementById("degistirici").addEventListener("click",function(){
+    paraBirimi=prompt("ParaBirimi Giriniz");
+    document.getElementById("para").innerHTML="para biriminiz "+paraBirimi+" <a id='degistirici' href='#'>deðiþtir</a>";
+    
+});
+buton.addEventListener("click",function(){
+    var gunlukUcret=toplamUcret.value/sure.value;
+    gunlukUcret=gunlukUcret.toFixed(2);/*virgülden sonraki 2 basamaðý göster*/
+    sonucDiv.innerHTML="Gunluk ucretiniz = "+gunlukUcret+ " " +paraBirimi;
+    
+});
+----------------------------------
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script>
+    var sayi=prompt("sayi girer misin?");
+    if(isNaN(sayi)){
+        alert("Lütfen bir sayi giriniz.");
+        
+    }
+    
+</script>
+
+</body>
+</html>
+---------------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>Kaç parmak tuttum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #benTah,#bilTah{
+            width:400px;
+            height:400px;
+            float:left;
+            background-color: red;
+            margin-right:5px;
+            background-repeat:no-repeat;
+            background-position:100px 30px;
+        }
+        .clear{
+            clear:both;
+        }
+        input[type="text"]{
+            width:25px;
+            position:relative;
+            top:-5px;
+        }
+        input[type="submit"]{
+            position:relative;
+            top:-5px;
+        }
+    </style>
+   
+    
+</head>
+<body>
+    <!--JAVASCRÝPT KAÇ PARMAK TUTTUM OYUNU-->
+     <div id="benTah"></div>
+     <div id="bilTah"></div>
+     <div class="clear"></div>
+     <input type="range" id="kaydir" min="0" max="5"/><input type="text" disabled="disabled"/>
+     <input type="submit" value="Sansini Dene" id="dene"/><br/>
+     <span id="skor"></span>
+    
+    
+    
+<script>
+     var bilg=document.getElementById("bilTah"),ben=document.getElementById("benTah"),
+            kaydir=document.getElementById("kaydir"),skor=5,bilgTah,
+            benTah,buton=document.getElementById("dene");
+   
+   
+   //kaydiricinin deðerini yana yazdýk.
+   kaydir.addEventListener("mousedown",function(){
+       this.addEventListener("mousemove",function(){
+           this.nextElementSibling.value=this.value; 
+           benTah=this.value;
+           
+            switch(benTah)
+   {
+       case "0":ben.style.backgroundImage="url(0.png)";
+       break;
+       case "1":ben.style.backgroundImage="url(1.png)";
+       break;
+       case "2":ben.style.backgroundImage="url(2.png)";
+       break;
+        case "3":ben.style.backgroundImage="url(3.png)";
+       break;
+        case "4":ben.style.backgroundImage="url(4.png)";
+       break;
+         case "5":ben.style.backgroundImage="url(5.png)";
+       break;
+        
+   }
+   
+    }); }); 
+   
+   
+   
+   //oyunu kodlamaya baþladýk.
+   buton.addEventListener("click",function(){
+       bilgTah=Math.round(Math.random()*5);
+     switch(bilgTah)
+   {
+       case 0:bilg.style.backgroundImage="url(0.png)";
+       break;
+       case 1:bilg.style.backgroundImage="url(1.png)";
+       break;
+       case 2:bilg.style.backgroundImage="url(2.png)";
+       break;
+        case 3:bilg.style.backgroundImage="url(3.png)";
+       break;
+        case 4:bilg.style.backgroundImage="url(4.png)";
+       break;
+         case 5:bilg.style.backgroundImage="url(5.png)";
+       break;  
+   }  
+      if(bilgTah==Number(benTah)) {
+          skor++;
+          document.getElementById("skor").innerHTML="Skorunuz: "+skor;
+          alert("Tebrikler Skorunuz: "+skor);
+          
+      }else{
+          skor--;
+          document.getElementById("skor").innerHTML="Skorunuz: "+skor;
+          if(skor<1){buton.disabled=true;
+          alert("Üzgünüm hiç jetonunuz kalmadý\n Oynamak için jeton yükleyin.");
+            }
+          
+      }
+       
+       
+   });
+   
+   
+           
+   
+</script>
+
+</body>
+</html>
+----------------------------
+DÝZÝLER
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function arrayTest(){
+            
+            var a=["deneme","ahmet","mehmet",3,4,2]
+    document.getElementById("test").innerHTML=a;   
+    }
+        
+    </script>
+</head>
+<body>
+<div id="test"></div>
+<script>arrayTest();</script>
+</body>
+</html>
+-------------------
+BASÝT GALERÝ TARZI BÝÞEY
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      function resimkapat() { 
+
+document.getElementById('resim_alani').style.display='none'; 
+
+} 
+
+function resimgoster(resim) { 
+
+document.getElementById('resim_alani').innerHTML='<img src=" '+resim+'"><br><a href=#resim_alani onclick="return resimkapat()">Resmi Kapat</a>'; 
+
+document.getElementById('resim_alani').style.display=''; 
+
+} 
+        
+    </script>
+</head>
+<body>
+    <a href=#resim_alani onclick="return resimgoster('https://www.sahibinden.com/images/category_promoter/Audi-A5.jpg');">Resmi göster 
+
+</a>
+<div id="resim_alani" style="display: none">
+    
+    
+    
+</div>
+</body>
+</html>
+-------------------------
+****************GÜZEL BÝR GALERÝ YAPTIK **************************
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    color: #6F6F6D;
+    font-family: Georgia;
+    font-size: 10px; 
+        }
+        #container {
+    width: 580px; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #e2e2e2;
+    background: #F5F5F5;
+    margin: 10px;
+    }
+    #resimdiv {
+    width: 400px;
+    background-color: #91918E;
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    #resimdiv img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #e2e2e2;  
+    }
+    #thumb {
+    margin-top: 15px; 
+    }
+    #thumb img {
+    width: 100px;
+    height: 75px;
+    border: 2px solid #e2e2e2; 
+    }
+    </style>
+    <script>
+     function myResim(aydi){
+    // Yöntem 1: Resmi deðiþtirme
+    // document.myresim.src =  ""+ aydi +"";
+    
+    // Yöntem 2: Taþýyýcý div'e html import etme
+    document.getElementById("resimdiv").innerHTML = "<img name=\"myresim\" src=\""+ aydi +"\" />";
+}
+        
+    </script>
+</head>
+<body>
+<center>
+<h2>Egonomik.com // Javascript resim scripti</h2>
+<div id="container" align="center">
+
+        
+        <div id="resimdiv" name="resimdiv">
+        <img name="myresim" src="http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-01.jpg" />
+        </div>
+
+        <div id="thumb">
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-02.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim1.jpg" width="100" /></a>
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-09.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim2.jpg" width="100" /></a>
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-01.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim3.jpg" width="100" /></a>
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-18.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim4.jpg" width="100" /></a>
+
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-03.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim5.jpg" width="100" /></a>
+        </div>
+        
+    </div>
+
+</center>
+</body>
+</html>
+---------------------------------------------
+REAKSÝYON HIZ TESTÝ OYUNU
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #anaEl {
+            width:50px;
+            height:50px;
+            background-color: #f4cbad;
+            position:relative;
+        }
+    </style>
+    <script>
+        var anaEl,olusmaZamani,tiklamaZamani;
+        window.addEventListener("load",function(){
+            anaEl=document.getElementById("anaEl");
+            anaEl.addEventListener("click",tik);
+        });
+        function rastPoz(maxYuk,maxGen,birim){
+            var yukseklik=Math.round(Math.random()*maxYuk)+birim,genislik=Math.round(Math.random()*maxGen)+birim;
+            return [yukseklik,genislik];
+        }
+        function bicim(){
+            var bicim=Math.round(Math.random()*60)+"%";
+            return bicim;
+            
+        }
+        function rastRenk(){
+            var olasiliklar="0123456789abcdef",renk="#";
+            for(var i=0;i<6;i++){
+            renk+=olasiliklar.split("")[Math.floor(Math.random()*15)];
+                             }
+                             return renk;
+        }
+        function olus(){
+            setTimeout(function(){
+                pozisyon=rastPoz(400,600,"px");
+                anaEl.style.borderRadius=bicim();
+                anaEl.style.backgroundColor=rastRenk();
+               anaEl.style.top=pozisyon[0];
+               anaEl.style.left=pozisyon[1];
+                anaEl.style.display="block";/*görünüryap*/
+                olusmaZamani=Date.now();
+            },Math.random()*5000);
+            
+        }
+        function tik(){
+            olus();
+            tiklamaZamani=Date.now();
+            anaEl.style.display="none";
+            document.getElementById("sonuc").innerHTML="Reaksiyon hýzýnýz: "+((tiklamaZamani-olusmaZamani)/1000).toFixed(2)+"saniyedir";
+        }
+    </script>
+</head>
+<body>
+<!--REAKSÝYON HIZ TESTÝ OYUNU-->
+<div id="sonuc"></div>
+<div id="anaEl"></div>
+
+
+
+
+
+
+
+</body>
+</html>
+---------------------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--KENDÝ NESNEMÝZÝ ÜRETMEK VE KULLANMAK-->
+<script>
+    var kisi={adi:"ramazan" ,soyadi:"ahmet"};
+    var ismi=kisi.adi;//kisi["adi"]
+    var soyismi=kisi.soyadi;
+    
+    
+    
+    var araba=new Object();
+    araba.marka="ford";
+    araba.model="masteng";
+    araba.renk="yellow";
+    araba.motor=5000;
+
+    
+    document.write(araba.marka+" "+araba.model+" "+araba.renk+" "+araba.motor);
+</script>
+
+
+</body>
+</html>
+-------------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--try catch-->
+<script>
+    var txt="";
+    try{
+        
+        documentttt.write("mesaj görüntülenecek mi?");
+        
+    }catch(err){
+        txt="sayfada bir hata oluþtu"+"<br/>";
+        txt+="hata mesajý"+err.message+"<br/>";
+        txt+="hata numarasý:"+err.number+"<br/>";
+        txt+="hata adý"+err.name;
+      
+        
+    }
+   document.write(txt);
+</script>
+
+
+</body>
+</html>
+------------------------
+ÇÝFT TIRNAK ÝÇÝNDE ÇÝFT TIRNAK KULLANMA
+document.write("<p style=\"color:red;\">Çift týrnakta kullanabildim</p> ");  \ ÝÞARETÝ KOYARAK YAPIYORUZ
+--------------------------------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--Regular expression(Regexp) KULLANIMI-->
+<script>
+  
+  var regex=new RegExp("t");
+  document.write(regex.test("Regex için bir yazý yazdým"));
+  
+  //regexlib.com dünyanýn en büyük regular expression kütüphanesi
+  
+  document.write("<hr/>");
+  
+  var pattern=new RegExp(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/);//email patterni-baþýna sonuna / iþareti koymayý unutma
+  document.write(pattern.test("mcs@mcansozeri.com"));  //doðrulugunu kontrol ediyor.
+  
+  document.write("<hr/>");
+  
+  var pattern=new RegExp(/^\d{5}$/);//baþýna sonuna / iþareti koymayý unutma
+  document.write(pattern.test("23432"));
+</script>
+
+
+</body>
+</html>
+------------------------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--PROMPT CONFÝRM-->
+<script>
+  
+var deger1=prompt("1.sayýyý giriniz.");
+var deger2=prompt("2.sayýyý giriiniz");
+document.write(parseInt(deger1)+parseInt(deger2));//parseInt ile dönüþüm yaptýk.
+document.write("<hr/>");
+
+var onay=confirm("Bu sitede yüksek teknooji kullanýlmýþtýr.Kabul ediyormusun?");
+document.write(onay);
+
+if(onay)
+{
+    document.write("hoþgeldin korkusuz");
+    
+}
+else{
+    window.close();
+    
+}
+</script>
+
+
+</body>
+</html>
+---------------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    alert("headden bir mesaj var");
+</script>
+</head>
+<body>
+    <!--head ile body arasýna yazýlan javasciprit arasýndaki farklar -->
+<script>
+
+</script>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In odio turpis, eleifend id placerat sit amet, bibendum sit amet nisl. Suspendisse id leo cursus, mollis diam sed, efficitur nisi. Sed finibus purus lacus, vitae mattis neque tempus nec. Aenean malesuada tristique urna, lacinia sagittis quam accumsan sit amet. Suspendisse elementum pretium nibh a rutrum. Duis maximus neque at suscipit tincidunt. Nam quis justo pulvinar, sodales dui a, efficitur urna. Morbi eleifend nisl non lectus tristique ullamcorper.   
+</p>
+<script>
+    alert("tarayýcýdan bir mesaj var 1.paragrafýn sonu");
+</script>
+<p>
+    Sed convallis tincidunt odio eget mattis. Vivamus et ex mollis, convallis ante eu, scelerisque ipsum. Sed eget urna in odio ullamcorper consectetur ac a turpis. Nulla facilisi. Sed et neque convallis, suscipit ex in, semper diam. Integer lobortis facilisis metus. Curabitur vel facilisis tortor.
+</p>
+<script>
+    alert("tarayýcýdan bir mesaj var 2.paragrafýn sonu");
+</script>
+<p>
+    Nam maximus vehicula sapien, ac dignissim urna egestas a. Suspendisse sit amet erat lectus. Donec cursus consectetur mauris vel blandit. Morbi volutpat sem ligula, ut tristique justo luctus quis. Etiam facilisis felis ac justo ornare maximus. Quisque vestibulum eros quis arcu aliquet, vitae aliquet justo sollicitudin. Mauris a mattis lacus. Fusce eget hendrerit dui, et maximus ex. Mauris imperdiet volutpat sapien ut rhoncus. Pellentesque interdum dapibus nisi, vel dignissim ipsum. Pellentesque ut imperdiet nisl. Sed ac egestas eros. Aliquam id orci luctus, dictum nibh non, eleifend odio. Donec lacinia arcu enim, eget lobortis leo dictum blandit. Nam suscipit purus felis, non faucibus eros efficitur nec
+</p>
+<script>
+    alert("tarayýcýdan bir mesaj var 3.paragrafýn sonu");
+</script>
+<p>
+    Etiam sit amet sem semper ex auctor pellentesque sit amet ultrices ante. Donec augue nulla, aliquet quis finibus vitae, consectetur vitae sapien. Suspendisse leo metus, commodo ac euismod quis, suscipit vel nisi. Duis sodales, mi tristique viverra molestie, arcu turpis dictum eros, nec ultrices eros ipsum ut nunc. Suspendisse pellentesque a nisi eu vulputate. Suspendisse ornare sed felis sit amet cursus. Sed tortor nibh, imperdiet sed suscipit nec, varius id dui. Ut lacinia nibh quam, quis tincidunt urna pellentesque ut. Aliquam erat volutpat. Nulla pharetra aliquam ex, eget hendrerit justo finibus id. Ut maximus egestas varius. Integer non purus tincidunt elit finibus fringilla id eget arcu.
+</p>
+<script>
+    alert("tarayýcýdan bir mesaj var 4.paragrafýn sonu");
+</script>
+</body>
+</html>
+---------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        
+    </script>
+</head>
+<body onload="/*alert('yüklendi!')*/">
+    <!--EVENTS -->
+<input type="button" value="týkla" onclick="javascript:alert('týklandý')"/>
+<input type="button" value="Confirm" onclick="confirm('iþlemi onaylýyormusunuz')"/>
+<input type="button" value="mouseover" onmouseover="alert('mouseover')"/>
+<input type="button" value="mouseout" onmouseout="alert('mouseout')"/>
+<input type="button" value="mousemove" onmousemove="alert('mousemove')"/>
+<input type="button" value="mousedown" onmousedown="alert('mousedown')"/>
+<input type="button" value="mouseup" onmouseup="alert('mouseup')"/>
+<input type="button" value="Focus" onfocus="alert('focus')"/>
+<input type="button" value="Blur" onblur="alert('blur')"/>
+<br/>
+                    <span>Email:</span><input type="text" value="Bir Email Giriniz!" onfocus="if(this.value==' '){this.value='Bir Email Giriniz!'}" onblur="if(this.value==' '){this.value=='Bir Email Giriniz!'}"/>
+                        <span>þifre:</span><input type="password" value="4234" onfocus="this.value=''" onblur="if(this.value.length<=5){alert('þifre 6 karakterden az olamaz')}"/>
+                  
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In odio turpis, eleifend id placerat sit amet, bibendum sit amet nisl. Suspendisse id leo cursus, mollis diam sed, efficitur nisi. Sed finibus purus lacus, vitae mattis neque tempus nec. Aenean malesuada tristique urna, lacinia sagittis quam accumsan sit amet. Suspendisse elementum pretium nibh a rutrum. Duis maximus neque at suscipit tincidunt. Nam quis justo pulvinar, sodales dui a, efficitur urna. Morbi eleifend nisl non lectus tristique ullamcorper.   
+</p>
+
+<p>
+    Sed convallis tincidunt odio eget mattis. Vivamus et ex mollis, convallis ante eu, scelerisque ipsum. Sed eget urna in odio ullamcorper consectetur ac a turpis. Nulla facilisi. Sed et neque convallis, suscipit ex in, semper diam. Integer lobortis facilisis metus. Curabitur vel facilisis tortor.
+</p>
+
+<p>
+    Nam maximus vehicula sapien, ac dignissim urna egestas a. Suspendisse sit amet erat lectus. Donec cursus consectetur mauris vel blandit. Morbi volutpat sem ligula, ut tristique justo luctus quis. Etiam facilisis felis ac justo ornare maximus. Quisque vestibulum eros quis arcu aliquet, vitae aliquet justo sollicitudin. Mauris a mattis lacus. Fusce eget hendrerit dui, et maximus ex. Mauris imperdiet volutpat sapien ut rhoncus. Pellentesque interdum dapibus nisi, vel dignissim ipsum. Pellentesque ut imperdiet nisl. Sed ac egestas eros. Aliquam id orci luctus, dictum nibh non, eleifend odio. Donec lacinia arcu enim, eget lobortis leo dictum blandit. Nam suscipit purus felis, non faucibus eros efficitur nec
+</p>
+
+<p>
+    Etiam sit amet sem semper ex auctor pellentesque sit amet ultrices ante. Donec augue nulla, aliquet quis finibus vitae, consectetur vitae sapien. Suspendisse leo metus, commodo ac euismod quis, suscipit vel nisi. Duis sodales, mi tristique viverra molestie, arcu turpis dictum eros, nec ultrices eros ipsum ut nunc. Suspendisse pellentesque a nisi eu vulputate. Suspendisse ornare sed felis sit amet cursus. Sed tortor nibh, imperdiet sed suscipit nec, varius id dui. Ut lacinia nibh quam, quis tincidunt urna pellentesque ut. Aliquam erat volutpat. Nulla pharetra aliquam ex, eget hendrerit justo finibus id. Ut maximus egestas varius. Integer non purus tincidunt elit finibus fringilla id eget arcu.
+</p>
+
+</body>
+</html>
+------------------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        
+    </script>
+    
+    
+    <style>
+        .paragraf{
+            font-size:20px;
+            font-family:Verdana;
+            color:#fff;
+            background-color: #00a5ff;
+        }    
+        .paragrafuzerinde{
+            background-color: #a500ff;
+            font-size: 20px;
+            font-family:Arial;
+        }
+        .paragrafCSS{
+          font-size:20px;
+            font-family:Verdana;
+            color:#fff;
+            background-color: #00a5ff;  
+            
+        }
+        .paragrafCSS:hover{
+              background-color: #a500ff;
+            font-size: 20px;
+            font-family:Arial;
+        }
+    </style>
+
+</head>
+<body onload="/*alert('yüklendi!')*/">
+    <!--EVENTS -->
+<input type="button" value="týkla" onclick="javascript:alert('týklandý')"/>
+<input type="button" value="Confirm" onclick="confirm('iþlemi onaylýyormusunuz')"/>
+<input type="button" value="mouseover" onmouseover="alert('mouseover')"/>
+<input type="button" value="mouseout" onmouseout="alert('mouseout')"/>
+<input type="button" value="mousemove" onmousemove="alert('mousemove')"/>
+<input type="button" value="mousedown" onmousedown="alert('mousedown')"/>
+<input type="button" value="mouseup" onmouseup="alert('mouseup')"/>
+<input type="button" value="Focus" onfocus="alert('focus')"/>
+<input type="button" value="Blur" onblur="alert('blur')"/>
+<br/>
+                    <span>Email:</span><input type="text" value="Bir Email Giriniz!" onfocus="if(this.value==' '){this.value='Bir Email Giriniz!'}" onblur="if(this.value==' '){this.value=='Bir Email Giriniz!'}"/>
+                        <span>þifre:</span><input type="password" value="4234" onfocus="this.value=''" onblur="if(this.value.length<=5){alert('þifre 6 karakterden az olamaz')}"/>
+                  
+
+<p>
+<img src="ben.png" title="BEN" alt="Mutlu-Üzgün" onmouseover="this.src='ben2.jpg'" onmouseout="this.src='ben.png'"/>
+</p>
+    
+<p class="paragraf" onmouseover="this.className='paragrafuzerinde'" onmouseout="this.className='paragraf'">
+    Etiam sit amet sem semper ex auctor pellentesque sit amet ultrices ante. Donec augue nulla, aliquet quis finibus vitae, consectetur vitae sapien. Suspendisse leo metus, commodo ac euismod quis, suscipit vel nisi. Duis sodales, mi tristique viverra molestie, arcu turpis dictum eros, nec ultrices eros ipsum ut nunc. Suspendisse pellentesque a nisi eu vulputate. Suspendisse ornare sed felis sit amet cursus. Sed tortor nibh, imperdiet sed suscipit nec, varius id dui. Ut lacinia nibh quam, quis tincidunt urna pellentesque ut. Aliquam erat volutpat. Nulla pharetra aliquam ex, eget hendrerit justo finibus id. Ut maximus egestas varius. Integer non purus tincidunt elit finibus fringilla id eget arcu.
+</p>
+<p class="paragrafCSS">
+    
+     Etiam sit amet sem semper ex auctor pellentesque sit amet ultrices ante. Donec augue nulla, aliquet quis finibus vitae, consectetur vitae sapien. Suspendisse leo metus, commodo ac euismod quis, suscipit vel nisi. Duis sodales, mi tristique viverra molestie, arcu turpis dictum eros, nec ultrices eros ipsum ut nunc. Suspendisse pellentesque a nisi eu vulputate. Suspendisse ornare sed felis sit amet cursus. Sed tortor nibh, imperdiet sed suscipit nec, varius id dui. Ut lacinia nibh quam, quis tincidunt urna pellentesque ut. Aliquam erat volutpat. Nulla pharetra aliquam ex, eget hendrerit justo finibus id. Ut maximus egestas varius. Integer non purus tincidunt elit finibus fringilla id eget arcu.
+    
+</p>
+
+
+</body>
+</html>
+-------------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+    
+    <style>
+        .paragraf{
+            font-size:20px;
+            font-family:Verdana;
+            color:#fff;
+            background-color: #00a5ff;
+        }    
+        .paragrafuzerinde{
+            background-color: #a500ff;
+            font-size: 20px;
+            font-family:Arial;
+        }
+        .paragrafCSS{
+          font-size:20px;
+            font-family:Verdana;
+            color:#fff;
+            background-color: #00a5ff;  
+            
+        }
+        .paragrafCSS:hover{
+              background-color: #a500ff;
+            font-size: 20px;
+            font-family:Arial;
+        }
+    </style>
+ <script>
+        function Yuklendi(){
+            alert("yüklendi");
+        }
+         function Tiklandi(){
+            alert("týklandý");
+        }
+        function UzerineGelince(sender,txt){
+            if(sender.value==' '){sender.value='Bir Email Giriniz!'}
+        }
+         function UzerindenGidince(sender,txt){
+            if(sender.value==' '){sender.value='Bir Email Giriniz!'}
+        }
+    </script>
+    
+    
+</head>
+<body onload="Yuklendi()">
+    <!--EVENTS -->
+<input type="button" value="týkla" onclick="Tiklandi()"/>
+
+
+Email:<input type="text" value="Bir Email Giriniz!" onfocus="UzerineGelince(this,'Bir Email Giriniz')" onblur="UzerindenGidince(this,'Bir Email Giriniz')"/>
+password:<input type="password" value="4234" onfocus="this.value=''" onblur="if(this.value.length<=5){alert('þifre 6 karakterden az olamaz')}"/>
+                  
+kullanýcý adý:<input type="text" value="kullanýcý adý girin!" onfocus="UzerineGelince(this)" onblur="UzerindenGidince(this)"/>
+
+
+
+
+<p>
+<img src="ben.png" title="BEN" alt="Mutlu-Üzgün" onmouseover="this.src='ben2.jpg'" onmouseout="this.src='ben.png'"/>
+</p>
+    
+<p class="paragraf" onmouseover="this.className='paragrafuzerinde'" onmouseout="this.className='paragraf'">
+    Etiam sit amet sem semper ex auctor pellentesque sit amet ultrices ante. Donec augue nulla, aliquet quis finibus vitae, consectetur vitae sapien. Suspendisse leo metus, commodo ac euismod quis, suscipit vel nisi. Duis sodales, mi tristique viverra molestie, arcu turpis dictum eros, nec ultrices eros ipsum ut nunc. Suspendisse pellentesque a nisi eu vulputate. Suspendisse ornare sed felis sit amet cursus. Sed tortor nibh, imperdiet sed suscipit nec, varius id dui. Ut lacinia nibh quam, quis tincidunt urna pellentesque ut. Aliquam erat volutpat. Nulla pharetra aliquam ex, eget hendrerit justo finibus id. Ut maximus egestas varius. Integer non purus tincidunt elit finibus fringilla id eget arcu.
+</p>
+<p class="paragrafCSS">
+    
+     Etiam sit amet sem semper ex auctor pellentesque sit amet ultrices ante. Donec augue nulla, aliquet quis finibus vitae, consectetur vitae sapien. Suspendisse leo metus, commodo ac euismod quis, suscipit vel nisi. Duis sodales, mi tristique viverra molestie, arcu turpis dictum eros, nec ultrices eros ipsum ut nunc. Suspendisse pellentesque a nisi eu vulputate. Suspendisse ornare sed felis sit amet cursus. Sed tortor nibh, imperdiet sed suscipit nec, varius id dui. Ut lacinia nibh quam, quis tincidunt urna pellentesque ut. Aliquam erat volutpat. Nulla pharetra aliquam ex, eget hendrerit justo finibus id. Ut maximus egestas varius. Integer non purus tincidunt elit finibus fringilla id eget arcu.
+    
+</p>
+
+
+</body>
+</html>
+-----------------------
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+    
+    <style>
+        .paragraf{
+            font-size:20px;
+            font-family:Verdana;
+            color:#fff;
+            background-color: #00a5ff;
+        }    
+        .paragrafuzerinde{
+            background-color: #a500ff;
+            font-size: 20px;
+            font-family:Arial;
+        }
+        .paragrafCSS{
+          font-size:20px;
+            font-family:Verdana;
+            color:#fff;
+            background-color: #00a5ff;  
+            
+        }
+        .paragrafCSS:hover{
+              background-color: #a500ff;
+            font-size: 20px;
+            font-family:Arial;
+        }
+    </style>
+ <script>
+        function Yuklendi(){
+          //  alert("yüklendi");
+        }
+         function Tiklandi(){
+            alert("týklandý");
+        }
+        function UzerineGelince(sender,txt){
+            if(sender.value==' '){sender.value='Bir Email Giriniz!'}
+        }
+         function UzerindenGidince(sender,txt){
+            if(sender.value==' '){sender.value=txt}
+        }
+        function karakteriAl(event,sender){
+            //alert(event.keyCode); //karakter kodunu verir.
+            var karakterKodu=event.keyCode;
+            var karakter=String.fromCharCode(karakterKodu);
+            alert(karakterKodu+" "+karakter);
+        }
+        //onkeypress event,alt,shift,capslock,numlocku yakalamaz.bu tuþlara týklandýðýnda tetiklenmez.
+        //onkeydown ise her türlü iþlemde tetiklenir.
+    </script>
+    
+    
+</head>
+<body onload="Yuklendi()">
+    <!--EVENTS KEYPRESS -->
+<input type="button" value="týkla" onclick="Tiklandi()"/>
+
+
+Email:<input type="text" value="Bir Email Giriniz!" onfocus="UzerineGelince(this,'Bir Email Giriniz')" onblur="UzerindenGidince(this,'Bir Email Giriniz')"/>
+password:<input type="password" value="4234" onfocus="this.value=''" onblur="if(this.value.length<=5){alert('þifre 6 karakterden az olamaz')}"/>
+                  
+kullanýcý adý:<input type="text" value="kullanýcý adý girin!" onfocus="UzerineGelince(this,'Kullanýcý Adý Giriniz.')" onblur="UzerindenGidince(this,'Kullanýcý Adý Giriniz.')"/>
+
+<input type="text" onkeypress="karakteriAl(event,this)"/>
+
+
+<p>
+<img src="ben.png" title="BEN" alt="Mutlu-Üzgün" onmouseover="this.src='ben2.jpg'" onmouseout="this.src='ben.png'"/>
+</p>
+    
+<p class="paragraf" onmouseover="this.className='paragrafuzerinde'" onmouseout="this.className='paragraf'">
+    Etiam sit amet sem semper ex auctor pellentesque sit amet ultrices ante. Donec augue nulla, aliquet quis finibus vitae, consectetur vitae sapien. Suspendisse leo metus, commodo ac euismod quis, suscipit vel nisi. Duis sodales, mi tristique viverra molestie, arcu turpis dictum eros, nec ultrices eros ipsum ut nunc. Suspendisse pellentesque a nisi eu vulputate. Suspendisse ornare sed felis sit amet cursus. Sed tortor nibh, imperdiet sed suscipit nec, varius id dui. Ut lacinia nibh quam, quis tincidunt urna pellentesque ut. Aliquam erat volutpat. Nulla pharetra aliquam ex, eget hendrerit justo finibus id. Ut maximus egestas varius. Integer non purus tincidunt elit finibus fringilla id eget arcu.
+</p>
+<p class="paragrafCSS">
+    
+     Etiam sit amet sem semper ex auctor pellentesque sit amet ultrices ante. Donec augue nulla, aliquet quis finibus vitae, consectetur vitae sapien. Suspendisse leo metus, commodo ac euismod quis, suscipit vel nisi. Duis sodales, mi tristique viverra molestie, arcu turpis dictum eros, nec ultrices eros ipsum ut nunc. Suspendisse pellentesque a nisi eu vulputate. Suspendisse ornare sed felis sit amet cursus. Sed tortor nibh, imperdiet sed suscipit nec, varius id dui. Ut lacinia nibh quam, quis tincidunt urna pellentesque ut. Aliquam erat volutpat. Nulla pharetra aliquam ex, eget hendrerit justo finibus id. Ut maximus egestas varius. Integer non purus tincidunt elit finibus fringilla id eget arcu.
+    
+</p>
+
+
+</body>
+</html>
+----------------------------------
+GERÝYE DEÐER DÖNDÜREN FONKSÝYONLAR
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function EminMisin(){
+        var sonuc=confirm("Göndermek istediðinize eminmisiniz?Bir daha geri alamazsýnýz?");
+        return sonuc;
+        }
+    </script>
+</head>
+<body>
+
+    
+    <form action="/" method="post">
+    
+        Alýcý No:<input type="text"/>
+        <br/>
+        Gönderen No:<input type="text"/>
+        <br/>
+        Miktar:<input type="text"/>
+        <br/>
+        <input type="submit" value="Gönder" onclick="return EminMisin()"/>
+        
+    </form>
+</body>
+</html>
+--------------------

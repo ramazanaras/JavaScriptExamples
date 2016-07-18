@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    color: #6F6F6D;
+    font-family: Georgia;
+    font-size: 10px; 
+        }
+        #container {
+    width: 580px; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #e2e2e2;
+    background: #F5F5F5;
+    margin: 10px;
+    }
+    #resimdiv {
+    width: 400px;
+    background-color: #91918E;
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    #resimdiv img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #e2e2e2;  
+    }
+    #thumb {
+    margin-top: 15px; 
+    }
+    #thumb img {
+    width: 100px;
+    height: 75px;
+    border: 2px solid #e2e2e2; 
+    }
+    </style>
+    <script>
+     function myResim(aydi){
+    // Yöntem 1: Resmi değiştirme
+    // document.myresim.src =  ""+ aydi +"";
+    
+    // Yöntem 2: Taşıyıcı div'e html import etme
+    document.getElementById("resimdiv").innerHTML = "<img name=\"myresim\" src=\""+ aydi +"\" />";
+}
+        
+    </script>
+</head>
+<body>
+<center>
+<h2>Egonomik.com // Javascript resim scripti</h2>
+<div id="container" align="center">
+
+        
+        <div id="resimdiv" name="resimdiv">
+        <img name="myresim" src="http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-01.jpg" />
+        </div>
+
+        <div id="thumb">
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-02.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim1.jpg" width="100" /></a>
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-09.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim2.jpg" width="100" /></a>
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-01.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim3.jpg" width="100" /></a>
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-18.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim4.jpg" width="100" /></a>
+
+         <a href="javascript:;" onclick="myResim('http://www.egonomik.com/wallpaper/grunge/egonomik.com-grunge-wallpaper-03.jpg');"><img src="http://www.egonomik.com/script/javascript-resim-goster/images/resim5.jpg" width="100" /></a>
+        </div>
+        
+    </div>
+
+</center>
+</body>
+</html>
