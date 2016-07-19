@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+             overflow:hidden;/*scroll çıkmaması için*/
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"> </canvas> 
+<audio preload="true" id="carp">
+    <source src="Tinie Tempah - Girls Like (Official Video).mp3"/>
+   // <source src="Tinie Tempah - Girls Like (Official Video).mp3"/>
+<audio>
+<script>
+   /* -----------------*/
+    //setInterval yerine kullandık aşağıdaki ifadeyi
+    //canvas animasyonumuz için gerekli kod 
+    window.animasyonFrameIstegi=(function(){
+      return window.requestAnimationFrame  || 
+       window.webkitRequestAnimationFrame ||
+       window.mozRequestAnimationFrame  || 
+       window.oRequestAnimationFrame || 
+       window.msequestAnimationFrame || 
+       function (callback){  
+           return window.setTimeout(callback,1000/60);  //1 saniyede 60 defa kodu çalıştır demek.
+       };   
+    })();
+    
+    //animasyonu durdumak için kullanacaz.
+    window.animasyonFrameIptal=(function(){
+      return window.cancelAnimationFrame  || 
+       window.webkitCancelRequestAnimationFrame ||
+       window.mozCancelRequestAnimationFrame  || 
+       window.oCancelRequestAnimationFrame || 
+       window.msCancelRequestAnimationFrame || 
+       clearTimeout();  
+    })();
+    
+    
+    
+    
+  /* ---------------*/
+  //canvas değişkeni
+    var canvas=document.getElementById("canvas"),
+    ctx=canvas.getContext("2d"),//canvas context oluşturduk.
+    G=window.innerWidth, //oyun alanı genişliği
+    Y=window.innerHeight,//oyun alanı yüksekliği
+    mouse={},//mouse objesi(nesnesi) tanımladık
+    parcalar=[],//parçaları içeren array
+    topum={},  //top objesi(top nesnesi)
+    cubuk=[2],  //iki cubugu içeren array
+    puanlar=0,//kullanıcıların puanları
+   hiz=60,//hız saniye başına frame
+   carpismaParcacigi=20,//carpışma anaında çıkacak parçaçık sayısı
+   carpismaDegiskeni=0,
+   parcaPozisyonu={},//parçaların yörüngesi
+   kivilcimDegiskeni=1,
+   baslatButon={},//başlat butonu objesi(nesnesi)
+   resetButon={},//reset buton objesi(nesnesi)
+   bitti=0,
+   res,//animasyonu başlatan değişken
+   cubukCarpisma;
+    
+    //canvasın tam ekran olmasını sağladık.
+    canvas.width=G;
+    canvas.height=Y;
+    
+    
+    //canvasta mouse hareketlerini algılamak için yaptık bu ifadeleri
+  canvas.addEventListener("mousemove",mouseHareket,true);//mouse hareket ederken mouseHareket fonksiyonunu çağır
+    canvas.addEventListener("mousedown",butonTiklandi,true);//mouse basılıyken  butonTiklandi fonksiyonunu çağır
+    
+    //carpışma müziği
+    carpisma=document.getElementById("carp");
+    
+    //top nesnemizi tanımlıyoruz.
+    topum={
+        x:50,       //topun x eksenindeki konumu
+        y:50,     //topun y eksenindeki konumu
+        r:5,        //yarıçap
+        c:"white",   //renk
+        xh:4,        //x ekseni hızı
+        yh:8,          //y ekseni hızı
+        
+        ciz:function(){
+            ctx.beginPath();
+            ctx.fillStyle=this.c;
+            ctx.arc(this.x,this.y,this.r,0*Math.PI,2*Math.PI,false);
+            ctx.fill();
+        }
+    };
+    
+    //başlat butonu 
+    baslatButon={
+        w:100,  //genişlik
+        h:50,   //yükseklik
+        x:G/2-50,  //x konumu 
+        y:Y/2-25,  //y konumu
+        
+        ciz:function(){
+            ctx.strokeStyle="white";  //karenin rengi 
+            ctx.lineWidth=2;  //karenin çizgi genişliği
+            ctx.strokeRect(this.x,this.y,this.w,this.h);  //karenin x ve y konumu //karenin genişliği yüksekliği
+            ctx.font="18px Arial,sans-serif";
+            ctx.textAlign="center"; //karenin içindeki yazının konumunu belirttik
+            ctx.textBaseline="middle";  
+            ctx.fillStyle="white"; //Başla yazısının rengi
+            ctx.fillText("Başla",G/2,Y/2); //Başla yazısının konumu
+            
+        }
+    };
+    
+    //reset butonu
+      //başlat butonu 
+    resetButon={
+        w:100,  //genişlik
+        h:50,   //yükseklik
+        x:G/2-50,  //x konumu 
+        y:Y/2-50,  //y konumu
+        
+        ciz:function(){
+            ctx.strokeStyle="white";  //karenin rengi 
+            ctx.lineWidth=2;  //karenin çizgi genişliği
+            ctx.strokeRect(this.x,this.y,this.w,this.h);  //karenin x ve y konumu //karenin genişliği yüksekliği
+            ctx.font="18px Arial,sans-serif";
+            ctx.textAlign="center"; //karenin içindeki yazının konumunu belirttik
+            ctx.textBaseline="middle";  
+            ctx.fillStyle="white"; //Başla yazısının rengi
+            ctx.fillText("Tekrar Oyna",G/2,Y/2-25); //Başla yazısının konumu
+            
+        }
+    };
+    
+    //kivilcim oluştur
+    function parcacikOlustur(x,y,m){  //x ve y pozisyon m 'de parcacık sayısı
+        this.x=x || 0;
+        this.y || 0 ;
+        
+        this.radius=1.2;
+        
+        this.xh=-1.5+Math.random()*3; //topun x hızı
+        this.yh=m*Math.random()*1.5; //topun y hızı
+        
+        
+    }
+    
+    //hizi arttırıyoruz.
+    function hizArttir(){
+      
+        if(puanlar%4 ==0)  
+           if(Math.abs(topum.xh)<15){
+               topum.xh+=(topum.xh<0)? -1 : 1;
+                topum.yh+=(topum.yh<0)? -2 : 2;
+           }
+    }
+    
+    //çubuk için fonksyion oluştur
+    function Kurek(poz){
+        this.h=5;  //kürek yüksekliği
+        this.w=150;  //kürek genişliği
+        
+       
+        //kurek pozisyonu
+        this.x=G/2-this.w/2;
+        this.y=(poz=="ust")? 0:Y-this.h;  //ternary(if yapısı) kullandık. //aşağıdaki çubuğun düzgün görünmesi için yaptık.
+    }
+    
+    //çubuk arrrayimize küreklerimizi ekliyoruz.
+    cubuk.push(new Kurek("asagi"));
+    cubuk.push(new Kurek("ust"));
+    
+    
+    //tuval çizmek için gerekli fonksiyon
+    function canvasCiz(){
+        ctx.fillStyle="black";
+        ctx.fillRect(0,0,G,Y);/*ekranı doldurduk. siyah yaptık.*/
+    }
+    
+    
+    //herşeyi canvas bölgesinde çizmek için gerekli fonksiyon
+    function ciz(){
+        canvasCiz();
+        for(var i=0;i<cubuk.length;i++){
+            p=cubuk[i]; 
+            ctx.fillStyle="white";
+            ctx.fillRect(p.x,p.y,p.w,p.h);
+        }
+        topum.ciz();
+        guncelle();
+    }
+    
+    //animasyonları çalıştırmak için oluşturduğumuz döngü
+    function animDongu(){
+       res=animasyonFrameIstegi(animDongu);
+       ciz();
+    }
+    //animDongu();   //browser açıldığında başlar bu döngü.
+    
+    function baslamaEkranı(){
+         ciz();
+         baslatButon.ciz();
+    }
+    
+    
+    
+    
+    //ekrandaki değişiklikleri güncelle fonksyionu gösterecek.
+    function guncelle(){
+     
+     skoruGuncelle();//skorumuzu güncellicez.
+     
+        //topu hareket ettiriyoruz
+     topum.x+=topum.xh;
+     topum.y+=topum.yh;
+        
+        //cubugu hareket ettiriyoruz
+        if(mouse.x && mouse.y){  //eğer mouseda bir hareketlilik varsa aşağıdakileri yap.
+            
+            for(var i=1;i<cubuk.length;i++ ){
+                
+                p=cubuk[i];
+                p.x=mouse.x-p.w/2;   //mouse nereye giderse çubukda oraya gidiyor.
+            }
+        }
+        
+        
+    
+        //cucukları çağır
+        p1=cubuk[1];
+        p2=cubuk[2];
+        
+        
+        //çarpışma işleminin gerçekleştiği yer.
+        if(carpismalar(topum,p1)){ //topla çubuk birbirine değdiği anı yapıyoruz.carpısmalar fonksyionundan true dönerse bunu yapıyoruz.
+            carpismaEylemi(topum,p1);
+            
+            
+        }else if(carpismalar(topum,p2)){
+             carpismaEylemi(topum,p2);
+        }else{// oyunda yandığımızda yapılan işlemler (carpismalar fonksiyonundan false dönerse bunu yapıyoruz.)
+            //top üst veya aşağı çubuga çarparsa yapılacak işlemler
+        if(topum.y+topum.r>Y){  //top yüksekliği geçerse yani oyun dışına çıkarsa kaybediyoruz.üst kısım için 
+            topum.y=Y-topum.r;
+            oyunBitti();
+        }else if(topum.y<0){//top yüksekliği geçerse yani oyun dışına çıkarsa kaybediyoruz.alt kısım için 
+            topum.y =topum.r;
+            oyunBitti();
+        }
+        
+        
+        
+        //top  sağ ve sol duvara çarparsa
+        if(topum.x+topum.r>G){
+            topum.xh=-topum.xh; //sağ tarafa çarparsa  geri dönmesi için.
+            topum.x=G- topum.r;//top sağ tarafa tam çarptığı anda geri dönmesi için
+        }else if(topum.x-topum.r<0){
+            topum.xh=-topum.xh;//sol tarafa çarparsa  geri dönmesi için.
+            topum.x=topum.r;
+        }
+        
+     }//else bitişi
+        
+        if(carpismaDegiskeni==1){
+            for(var k=0;k<carpismaParcacigi;k++){
+                parcalar.push(new parcacikOlustur(parcaPozisyonu.x,parcaPozisyonu.y,cogalt));
+                
+            }
+            
+        }
+        
+        //parcalarıyay fonksiyonu
+        parcalariyay();
+        carpismaDegiskeni=0;//parçaları sonradan silmek için
+        
+    }//güncelle fonksiyon sonu
+    
+    //mousemuzu hareket ettiriyoruz.
+    function mouseHareket(e){
+        //sağ ve sol yönde hareket ettirmemizi sağlayan işlemler
+        mouse.x=e.pageX; // x koordinatı 
+        mouse.y=e.pageY;  // y koordinatı
+        
+    }
+    
+    //top ile çubuk arasındaki çarpışmyı kontrol eden fonksiyon
+    function carpismalar(b,p){ //b:top ,p:cubuk
+        if(b.x +topum.r>=p.x && b.x-topum.r<=p.x+p.w){  // (x ekseni yani x koordinatı)  x ekseninde top ile cubugun çarpışma durumunu kontrol ettik
+            if(b.y>=(p.y-p.h) && p.y>0){  //y ekseninde top çubugu geçmeden için yapılan işlemler.
+                cubukCarpisma=1;
+                return true;
+                
+            }else if(b.y<=p.h && p.y==0){  //buradada oyunun bitmesini sağlıyoruz.top cubugu geçerse yanıyoruz.
+                cubukCarpisma=2;
+                return true;
+            }else {
+                return false;
+            }
+            
+        }
+        
+    }
+    
+    
+    //carpışma işlemninin gerçekleştiği an
+    function carpismaEylemi(topum,p){ //p:parçaçık 
+        topum.yh= -topum.yh;
+        
+        if(cubukCarpisma==1){ //top yukarı çarptığında
+            topum.y=p.y-p.h;
+            parcaPozisyonu.y=topum.y-topum.r;
+            cogalt=-1;
+        }else if(cubukCarpisma==2){ //top aşağıya çarptığında
+            topum.y=p.h+topum.r;
+            parcaPozisyonu.y=topum.y-topum.r;
+            cogalt=1;
+        }
+        puanlar++;
+        hizArttir();
+        
+        if(carpisma){
+            if(puanlar>0){
+                carpisma.pause();
+            }
+                carpisma.currentTime=0;
+                carpisma.play();
+           
+            
+        }
+        parcaPozisyonu.x=topum.x;
+        carpismaDegiskeni=1;
+        
+    }
+    
+    //parçaları dağıttığımız bölüm
+    function parcalariyay(){
+        for(var j=0;j<parcalar.length;j++){
+            par=parcalar[j];
+            ctx.beginPath();
+            ctx.fillStyle="white";
+            if(par.radius>0){
+                ctx.arc(par.x,par.y,par.radius,0,2*Math.PI,false);
+            }
+            ctx.fill();
+            par.x+=par.xh;
+            par.y+=par.yh;
+            
+            //parçacıkları oluştuktan sonra kaybet
+            par.radius=Math.max(par.radius-0.05,00);
+        }
+        
+    }
+    
+    
+    //puan tablosu
+    function skoruGuncelle(){
+        ctx.fillStyle="white";
+        ctx.font="16px Arial,sans-serif";
+        ctx.textAlign="left"; //solda
+        ctx.textBaseline="top";//pozisyonu belirledik yukarıda solda
+        ctx.fillText("Puan: "+puanlar,20,20);//yazının genişliği ve yüksekliği 20 20
+        
+    }
+    
+    
+    
+    //oyunu bitiren fonksyion
+    function oyunBitti(){
+        ctx.fillStyle="white";
+        ctx.font="20px Arial,sans-serif";
+        ctx.textAlign="center";
+        ctx.textBaseline="middle";//yazıyı ortalayacak
+        ctx.fillText("Yenildin loo :( -Toplamda"+puanlar+"puan aldin",G/2,Y/2+25);//yazının konumunu belirledik.
+        
+        animasyonFrameIptal(res);
+        
+        bitti=1;
+        
+        resetButon.ciz();//oyun bittiğinde reset butonu belirir.
+    }
+    
+    //buton tıklandığında başla veya resetle
+    function butonTiklandi(e){
+        
+        //mouse pozisyonu sakla 
+        var mx=e.pageX,   //mouseun x eksenindeki hareketini yakaladık
+             my=e.pageY;   //mouseun y ekesenindeki hareketini yakaladık
+        
+        
+        //başlat butonuna tıkla
+        if(mx>baslatButon.x && mx<=baslatButon.x+baslatButon.w){
+            animDongu();
+            
+            //baslat butonu ekrandan sil
+            baslatButon={};
+        }
+        if(bitti==1){
+            if(mx>resetButon.x && mx<=resetButon.x+resetButon.w){
+                topum.x=20;
+                topum.y=20;
+                puanlar=0;
+                topum.xh=4;
+                topum.yh=8;
+                animDongu();
+                
+                bitti=0;
+            }
+        }
+    }
+    baslamaEkranı();
+    
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
